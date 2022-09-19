@@ -1,0 +1,7 @@
+# Ignore File
+config.py
+__pycache__/*
+views/__pycache__/*
+test/*
+static/images/profile.jpg
+static/css/SCDream9.otf

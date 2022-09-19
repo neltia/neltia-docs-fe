@@ -1,0 +1,37 @@
+@font-face {
+   font-family: "SCDream9";
+   src: url("SCDream9.otf") format('truetype');
+}
+
+html,
+body {
+   margin:0;
+   padding:0;
+   height:92.5%;
+}
+
+.contents-wrap {
+   min-height:100%;
+   position:relative;
+   padding-bottom:100px;/* footer height */
+}
+
+.footer {
+   width:100%;
+   height:100px;
+   position:absolute;
+   bottom:0;
+   background:#5eaeff;
+  text-align: center;
+  color: white;
+}
+
+#info-text {
+   font-weight: bold;
+   color: #333;
+}
+
+#dreamfont {
+   font-family: 'SCDream9';
+   font-size: large;
+}
