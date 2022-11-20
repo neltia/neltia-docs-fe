@@ -1,0 +1,9 @@
+@font-face {
+   font-family: "SCDream9";
+   src: url("SCDream9.otf") format('truetype');
+}
+
+#dreamfont {
+   font-family: 'SCDream9';
+   font-size: large;
+}

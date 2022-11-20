@@ -3,5 +3,7 @@ config.py
 __pycache__/*
 views/__pycache__/*
 test/*
+backup/*
 static/images/profile.jpg
+static/images/favicon*
 static/css/SCDream9.otf
