@@ -11,5 +11,11 @@ blueprint = Blueprint(branch, __name__, url_prefix=f'/{branch}')
 
 # 메인 페이지
 @blueprint.route("/")
-def project_main():
+def tools_main():
     return render_template(f"/{branch}/index.html")
+
+
+# calc - percent
+@blueprint.route("/percent")
+def tools_percent():
+    return render_template(f"/{branch}/calc_percent.html")
