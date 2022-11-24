@@ -1,18 +1,19 @@
 # flask lib
 from flask import Flask
+from flask import redirect, url_for
 from flask import render_template
 # python lib
 import hashlib
 # file
 import config
-from views import books
+from views import series
 from views import toolbox
 
 
 # app config
 app = Flask(__name__)
 app.config['SECRET_KEY'] = hashlib.sha512(config.secret.encode('utf-8')).hexdigest()
-app.register_blueprint(books.blueprint)
+app.register_blueprint(series.blueprint)
 app.register_blueprint(toolbox.blueprint)
 
 
@@ -26,9 +27,7 @@ def page_not_found(error):
 # default route
 @app.route("/")
 def index():
-    return render_template(
-        "index.html",
-    )
+    return redirect(url_for("series.series_main"))
 
 
 if __name__ == "__main__":
