@@ -3,7 +3,7 @@
 
 <main style="margin-top: 58px;">
  <div class="container pt-4">
-  <div class="card">
+  <div class="card mb-2" id="percent">
     <h5 class="card-header fw-bold">
       <i class="fas fa-percent me-3"></i>퍼센트 계산기
     </h5>
@@ -13,6 +13,20 @@
           <li>전체 값에서 비율에 해당하는 값 구하기</li>
           <li>전체 값에서 값의 비율 구하기</li>
           <li>일정 비율만큼 증가/감소한 값 구하기</li>
+        </ui>
+      </p>
+      <a href='{{url_for("tools.tools_percent")}}' class="btn btn-primary">Enter</a>
+    </div>
+  </div>
+
+  <div class="card mt-4 mb-2">
+    <h5 class="card-header fw-bold">
+      <i class="fas fa-code me-3"></i>URL 디코딩
+    </h5>
+    <div class="card-body">
+      <p class="card-text">
+        <ui>
+          <li></li>
         </ui>
       </p>
       <a href='{{url_for("tools.tools_percent")}}' class="btn btn-primary">Enter</a>
